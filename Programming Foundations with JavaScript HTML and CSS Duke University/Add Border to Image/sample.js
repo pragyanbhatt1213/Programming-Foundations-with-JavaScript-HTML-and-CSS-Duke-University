@@ -1,3 +1,5 @@
+//These are some programs that were given during the course for practice, I have combined those all into one file.
+//Sum of Rgb value of image
 function sumPixel(nameOfImage, xpos, ypos) ;{
     var img= new Simpleimage(nameOfImage);
     var pic= img.getPixel(xpos,ypos);
@@ -6,7 +8,6 @@ function sumPixel(nameOfImage, xpos, ypos) ;{
     var b= pic.getBlue();
     return(r+g+b)
 }
-
 var answer = sumPixel("drewgreen.png", 250, 500);
 print(answer);
 answer = sumPixel("drewgreen.png",10, 10);
@@ -31,7 +32,6 @@ for (var pixel of img.values()) {
     pixel.setRed(255);
     pixel.setGreen(255);
 }
-
 print(img);
 //Turn the eggs less red
 
@@ -42,8 +42,6 @@ for (var pixels of image.values()) {
     pixels= (pixels.setRed(70));
     }
 }
-    
-
 print(image); 
 //Green box in top left corner
 var image = new SimpleImage("chapel.png");
@@ -70,7 +68,6 @@ for (var y =  0; y < squareSize; y++) {
         }
     }
 }
-
 // Print the resulting image
 print(image);
 function topRightCorner(cornerWidth, cornerHeight, someImage, red, green, blue) {
